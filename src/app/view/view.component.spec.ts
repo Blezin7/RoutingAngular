@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Comp2Component } from './comp2.component';
+import { ViewComponent } from './view.component';
 
-describe('Comp2Component', () => {
-  let component: Comp2Component;
-  let fixture: ComponentFixture<Comp2Component>;
+describe('ViewComponent', () => {
+  let component: ViewComponent;
+  let fixture: ComponentFixture<ViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Comp2Component]
+      imports: [ViewComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Comp2Component);
+    fixture = TestBed.createComponent(ViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
