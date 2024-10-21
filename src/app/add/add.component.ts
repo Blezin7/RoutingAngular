@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './add.component.css'
 })
 export class AddComponent {
-
+  mtsample:string = 'This is from add component that is interpolated' 
 }

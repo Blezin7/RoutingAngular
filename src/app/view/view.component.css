@@ -2,3 +2,12 @@ h5, h1{
     display: flex;
     justify-content: center;
 }
+.input{
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 20px;
+    width: 40%;
+    text-align: center;
+}
