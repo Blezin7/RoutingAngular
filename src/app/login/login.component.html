@@ -1,0 +1,18 @@
+<form [formGroup]="loginForms" (ngSubmit)="auth()">
+    <div class="login">
+        <div class="container">
+            <h1 *ngFor="let login of wlist">{{login}}</h1>
+            <div class="user">
+                <label for="">Username: </label> <br>
+                <span *ngIf="admin && admin.invalid">username need to be 4 letters or more</span>
+                <input class="ipt" formControlName="admin" type="text" [(ngModel)]="user" name="user" placeholder="Enter your Name">
+            </div>
+            <div class="pass">
+                <label for="">Password: </label><br>
+                <span *ngIf="password && password.invalid">password need to be 6 letters or more</span>
+                <input class="ipt" formControlName="password" type="password" [(ngModel)]="pass" name="pass" placeholder="Enter your Password">
+            </div>
+            <button class="btn" type="submit">Login</button>
+        </div>
+    </div>
+</form>

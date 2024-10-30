@@ -1,0 +1,63 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+h1{
+    margin-top: 0px;
+}
+.container{
+    height: 330px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+}
+.user{
+    width: 90%;
+}
+.pass{
+    width: 90%;
+}
+.user label{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.pass label{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.ipt{
+    width: 90%;
+    height: 40px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid silver;
+    margin: 2px 0 20px 0;
+    padding: 0px 10px;
+}
+.btn{
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: green;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    transition: .3s;
+}
+.btn:hover{
+    opacity: .7;
+}
+span{
+    color: red;
+    margin-left: 5px;
+}
