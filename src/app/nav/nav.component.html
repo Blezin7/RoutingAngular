@@ -1,8 +1,11 @@
 <div class="main">
     <div class="nav">
       <div class="nav-comp main"><a routerLink="/Home" routerLinkActive="active">Home</a></div>
-      <div class="nav-comp one"><a routerLink="/Home/Add" routerLinkActive="active">Add</a></div>
-      <div class="nav-comp two"><a routerLink="/Home/View" routerLinkActive="active">View</a></div>
+      <div class="nav-comp one"><a routerLink="Add" routerLinkActive="active">Add</a></div>
+      <div class="nav-comp two"><a routerLink="View" routerLinkActive="active">View</a></div>
+      @if(authService.currentUserSig()){
+      <div class="nav-comp three"><a (click)="logOut()" routerLink="Login" routerLinkActive="active">Logout</a></div>
+      }
     </div>
 </div>
 <router-outlet></router-outlet>

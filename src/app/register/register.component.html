@@ -1,0 +1,28 @@
+@if(errorMessage){
+    <div>{{errorMessage}}</div>
+}
+
+<form [formGroup]="loginForms" (ngSubmit)="auth()">
+    <div class="Register">
+        <div class="container">
+            <h1 *ngFor="let login of wlist">{{login}}</h1>
+            <div class="yo">
+                <label for="">Email: </label> <br>
+                <span *ngIf="email && email.invalid">Invalid Email Format</span>
+                <input class="ipt" formControlName="email" type="text" [(ngModel)]="yo" name="yo" placeholder="Enter your Name">
+            </div>
+            <div class="user">
+                <label for="">Username: </label> <br>
+                <span *ngIf="username && username.invalid">username need to be 4 letters or more</span>
+                <input class="ipt" formControlName="username" type="text" [(ngModel)]="user" name="user" placeholder="Enter your Name">
+            </div>
+            <div class="pass">
+                <label for="">Password: </label><br>
+                <span *ngIf="password && password.invalid">password need to be 6 letters or more</span>
+                <input class="ipt" formControlName="password" type="password" [(ngModel)]="pass" name="pass" placeholder="Enter your Password">
+            </div>
+            <button class="btn" type="submit">Register</button>
+            <div class="redirect">Already an User <a href="/Login"> Click Here</a></div>
+        </div>
+    </div>
+</form>
